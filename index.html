@@ -2,20 +2,34 @@
     <head>
         <title>Template</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
-        <script type="text/javascript" src="assets/lib/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
     </head>
 <body>
     <div class="main-container container-fluid">
         <div class="row header-row align-items-start">
-            <div class="col header-column hc-1 offset-md-1 offset-lg-1 col-md-2 col-lg-2 col-sm-4 col-xs-4">Image</div>
-            <div class="col header-column hc-2 col-md-2 col-lg-2 col-sm-2 col-xs-2">Heading 1</div>
-            <div class="col header-column hc-3 col-md-2 col-lg-2 col-sm-2 col-xs-2">Heading 2</div>
-            <div class="col header-column hc-4 col-md-2 col-lg-2 col-sm-2 col-xs-2">Heading 3</div>
-            <div class="col header-column hc-5 col-md-2 col-lg-2 col-sm-2 col-xs-2">Heading 4</div>
+            <div class="col header-column hc-1 offset-md-1 offset-lg-1 offset-xs-1 offset-sm-1 col-md-4 col-lg-4 col-sm-8 col-8"></div>
+            <div class="col header-column hc-2 col-md-6 col-lg-6 col-sm-8 col-8">
+                <a href="#" class="nav-a"><span>Products</span></a>
+                <a href="#" class="nav-a"><span>Customers</span></a>
+                <a href="#" class="nav-a"><span>News + Events</span></a>
+                <a href="#" class="nav-a"><span>About us</span></a>
+            </div><!-- end of hc-2 -->
+            <div class="col nav-res-bars header-column col-1 col-sm-1">
+                    <i class="fa fa-bars nav-bars" aria-hidden="true"></i>
+            </div><!-- end of nav-res-bars -->
         </div><!-- end of header-row -->
+
+        <div class="header-toggle-options col-12 col-sm-12" style="display:none;">
+                <a href="#" class="nav-a"><span>Products</span></a>
+                <a href="#" class="nav-a"><span>Customers</span></a>
+                <a href="#" class="nav-a"><span>News + Events</span></a>
+                <a href="#" class="nav-a"><span>About us</span></a>
+        </div>
+
         <div class="row main-row">
-            <div class="column main-column col-md-10 col-lg-10 col-xs-12 col-sm-12 offset-md-1 offset-lg-1">
+            <div class="column main-column col-md-10 col-lg-10 col-12 col-sm-12 offset-md-1 offset-lg-1">
                 <div class="row sub-row sr-1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque. Ut rhoncus placerat cursus. Integer sodales, ante quis venenatis iaculis, erat dolor tincidunt turpis, et accumsan tortor massa non libero. Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. Mauris blandit sagittis ex, vitae sollicitudin justo tempor id. Aenean id ligula aliquam, vehicula elit eget, eleifend sem. Donec in arcu sed lacus scelerisque semper ut sed nulla. Praesent volutpat pretium enim. Proin finibus, sapien vitae pretium lacinia, nisi ante tincidunt odio, ac congue odio ex vitae quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam convallis arcu elementum tincidunt ultrices. Vestibulum fringilla ligula sed congue facilisis.
 
@@ -47,9 +61,14 @@ Quisque volutpat nunc sed odio fermentum porttitor. Fusce leo ex, volutpat eu ef
             </div><!-- end of main column -->
         </div><!-- end of row div -->
         <div class="row footer-row align-items-end">
+                , molestie sed sapien eget, facilisis venena
         </div><!-- end of footer-row -->
     </div><!-- main container ends -->
     
+    <!-- scripts start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/toggle-nav.js"></script>
+    <!-- end of scripts -->
 
 </body>
 </html>
