@@ -1,8 +1,13 @@
 <!DOCTYPE html>
     <head>
         <title>Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/slider.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/lib/cycle2/cycle2.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/lib/video-player/css/videopopup.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
     </head>
@@ -30,45 +35,227 @@
 
         <div class="row main-row">
             <div class="column main-column col-md-10 col-lg-10 col-12 col-sm-12 offset-md-1 offset-lg-1">
+               
                 <div class="row sub-row sr-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque. Ut rhoncus placerat cursus. Integer sodales, ante quis venenatis iaculis, erat dolor tincidunt turpis, et accumsan tortor massa non libero. Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. Mauris blandit sagittis ex, vitae sollicitudin justo tempor id. Aenean id ligula aliquam, vehicula elit eget, eleifend sem. Donec in arcu sed lacus scelerisque semper ut sed nulla. Praesent volutpat pretium enim. Proin finibus, sapien vitae pretium lacinia, nisi ante tincidunt odio, ac congue odio ex vitae quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam convallis arcu elementum tincidunt ultrices. Vestibulum fringilla ligula sed congue facilisis.
-
-Donec nulla lacus, molestie sed sapien eget, facilisis venenatis est. Vestibulum interdum elementum eros nec rutrum. Donec fringilla faucibus neque ut porttitor. Nam ac ante nec justo consequat sodales. Sed in porttitor justo. Nunc imperdiet mollis efficitur. Mauris elementum mi ut purus consequat tincidunt.
-
-Quisque volutpat nunc sed odio fermentum porttitor. Fusce leo ex, volutpat eu efficitur at, elementum a elit. Mauris velit ligula, malesuada id justo ut, vestibulum tempus mi. Sed eget semper tellus. Donec et congue purus. Vivamus facilisis tellus erat, in placerat quam gravida eu. Proin vestibulum orci a ante pellentesque porttitor. Aenean at quam pellentesque velit dapibus varius quis eu diam. Pellentesque ullamcorper lacus nisi, id molestie orci consequat a. Integer pellentesque dapibus nunc sit amet blandit. Fusce vel semper magna. Nam quis ante at felis efficitur imperdiet eget ac dolor.
+                    <div class="cycle-slideshow" data-cycle-fx=scrollHorz data-cycle-timeout=2000>
+                        <!-- empty element for pager links -->
+                        <div class="cycle-pager"></div>
+                        <po class="page-overlay po-1">
+                            <img src="assets/images/banner_slider_01.jpg">
+                            <div class="overlay-text ot1">
+                                <div class="ot-1-combo">
+                                        <span class="ot-1-heading">Meta Consectetus</span>
+                                        <span class="ot-1-content">Lorem ipsum Lorem ipsum <br> Lorem ipsumLorem ipsum </span>
+                                </div>                                
+                                <div class="ot-1-button">
+                                    <span>Learn More</span>
+                                    <img src="assets/images/arrow.png" id="arrow"/>
+                                </div>
+                            </div>
+                        </po>
+                        <po class="page-overlay po-2">
+                            <img src="assets/images/banner_slider_02.jpg">
+                            <div class="overlay-text ot1">
+                                    <div class="ot-1-combo">
+                                            <span class="ot-1-heading">Accusantium <br> on doloremque</span>
+                                            <span class="ot-1-content">Lorem ipsum dolor <br> sit amet, consectetur adipiscing <br> elit tortor massa non libero. </span>
+                                    </div>                                
+                                    <div class="ot-2-button">
+                                        <span>Learn More</span>
+                                        <img src="assets/images/arrow.png" id="arrow"/>
+                                    </div>
+                                </div>
+                        </po>
+                        
+                    </div>
                 </div><!-- end of sr-1 -->
+
+
+                <!-- start of sr-2 -->
                 <div class="row sub-row sr-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque. Ut rhoncus placerat cursus. Integer sodales, ante quis venenatis iaculis, erat dolor tincidunt turpis, et accumsan tortor massa non libero. Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. Mauris blandit sagittis ex, vitae sollicitudin justo tempor id. Aenean id ligula aliquam, vehicula elit eget, eleifend sem. Donec in arcu sed lacus scelerisque semper ut sed nulla. Praesent volutpat pretium enim. Proin finibus, sapien vitae pretium lacinia, nisi ante tincidunt odio, ac congue odio ex vitae quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam convallis arcu elementum tincidunt ultrices. Vestibulum fringilla ligula sed congue facilisis.
+                        <div class="row sr-2-r-1">
+                                the connected lifestyle
+                        </div> 
+                        <div class="row sr-2-r-2">
+                            <div class="col lf-col-1 col-lg-4 col-md-4 col-sm-12 col-12">
+                                <div class="lf-col-1-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>Curabitur porttitor sem in quam ullamcorper, id viverra lorem eleifend.Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. 
+                                </div>
+                                <div class="lf-col-1-button"> 
+                                    <div class="ot-1-button-lf">
+                                            <span>Learn More</span>
+                                            <img src="assets/images/arrow.png" id="arrow"/>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="col lf-col-2 col-lg-8 col-md-8 col-sm-12 col-12">
+                                <div class="row lf-col-2-r-1">
+                                    <div class="col lf-col-2-1 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="row lf-right-content-1">
+                                            lorem ipsum
+                                        </div>
+                                        <div class="row lf-right-content-2">
+                                            <div class="col lf-rc2-col-1 col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <img class="lf-images" src="assets/images/lifestyle_thmb_img01.png">
+                                                <span class="lf-rc-2-col-1-heading">connect</span>
+                                                <span class="lf-rc-2-col-1-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                            </div>
+                                            <div class="col lf-rc2-col-1 col-lg-6 col-md-6 col-sm-6 col-6">
+                                                <img class="lf-images" src="assets/images/lifestyle_thmb_img02.png">
+                                                <span class="lf-rc-2-col-1-heading">experience</span>
+                                                <span class="lf-rc-2-col-1-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col lf-col-2-1 col-lg-6 col-md-6 col-sm-12 col-12">
+                                            <div class="row lf-right-content-1">
+                                                lorem ipsum dolor
+                                            </div>
+                                            <div class="row lf-right-content-2">
+                                                <div class="col lf-rc2-col-1 col-lg-6 col-md-6 col-sm-6 col-6">
+                                                    <img class="lf-images" src="assets/images/lifestyle_thmb_img03.png">
+                                                    <span class="lf-rc-2-col-1-heading">discover</span>
+                                                    <span class="lf-rc-2-col-1-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                                </div>
+                                                <div class="col lf-rc2-col-1 col-lg-6 col-md-6 col-sm-6 col-6">
+                                                    <img class="lf-images" src="assets/images/lifestyle_thmb_img04.png">
+                                                    <span class="lf-rc-2-col-1-heading">grow</span>
+                                                    <span class="lf-rc-2-col-1-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>   
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div><!-- end of sr-2 -->
 
-Donec nulla lacus, molestie sed sapien eget, facilisis venenatis est. Vestibulum interdum elementum eros nec rutrum. Donec fringilla faucibus neque ut porttitor. Nam ac ante nec justo consequat sodales. Sed in porttitor justo. Nunc imperdiet mollis efficitur. Mauris elementum mi ut purus consequat tincidunt.
 
-Quisque volutpat nunc sed odio fermentum porttitor. Fusce leo ex, volutpat eu efficitur at, elementum a elit. Mauris velit ligula, malesuada id justo ut, vestibulum tempus mi. Sed eget semper tellus. Donec et congue purus. Vivamus facilisis tellus erat, in placerat quam gravida eu. Proin vestibulum orci a ante pellentesque porttitor. Aenean at quam pellentesque velit dapibus varius quis eu diam. Pellentesque ullamcorper lacus nisi, id molestie orci consequat a. Integer pellentesque dapibus nunc sit amet blandit. Fusce vel semper magna. Nam quis ante at felis efficitur imperdiet eget ac dolor.
-                </div><!-- end of sr-2 -->
                 <div class="row sub-row sr-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque. Ut rhoncus placerat cursus. Integer sodales, ante quis venenatis iaculis, erat dolor tincidunt turpis, et accumsan tortor massa non libero. Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. Mauris blandit sagittis ex, vitae sollicitudin justo tempor id. Aenean id ligula aliquam, vehicula elit eget, eleifend sem. Donec in arcu sed lacus scelerisque semper ut sed nulla. Praesent volutpat pretium enim. Proin finibus, sapien vitae pretium lacinia, nisi ante tincidunt odio, ac congue odio ex vitae quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam convallis arcu elementum tincidunt ultrices. Vestibulum fringilla ligula sed congue facilisis.
-
-Donec nulla lacus, molestie sed sapien eget, facilisis venenatis est. Vestibulum interdum elementum eros nec rutrum. Donec fringilla faucibus neque ut porttitor. Nam ac ante nec justo consequat sodales. Sed in porttitor justo. Nunc imperdiet mollis efficitur. Mauris elementum mi ut purus consequat tincidunt.
-
-Quisque volutpat nunc sed odio fermentum porttitor. Fusce leo ex, volutpat eu efficitur at, elementum a elit. Mauris velit ligula, malesuada id justo ut, vestibulum tempus mi. Sed eget semper tellus. Donec et congue purus. Vivamus facilisis tellus erat, in placerat quam gravida eu. Proin vestibulum orci a ante pellentesque porttitor. Aenean at quam pellentesque velit dapibus varius quis eu diam. Pellentesque ullamcorper lacus nisi, id molestie orci consequat a. Integer pellentesque dapibus nunc sit amet blandit. Fusce vel semper magna. Nam quis ante at felis efficitur imperdiet eget ac dolor.
+                    <div class="col cust-col-1 col-lg-7 col-md-7 col-sm-12 col-12">
+                        <div class="cu-co-1-heading">
+                            our customers
+                        </div>
+                        <div class="row cu-co-1-r1">
+                            <div class="cu-co-1-r1-content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque.
+                            </div>
+                            <div class="cu-co-1-r1-tiles">
+                                <img src="assets/images/custmr_logo01.png"/>
+                                <img src="assets/images/custmr_logo02.png"/>
+                                <img src="assets/images/custmr_logo03.png"/>
+                                <img src="assets/images/custmr_logo04.png"/>
+                                <img src="assets/images/custmr_logo05.png"/>
+                                <img src="assets/images/custmr_logo06.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of cust-col-1 -->
+                    <div class="col cust-col-2 col-lg-4 offset-lg-1 col-md-4 offset-md-1 col-sm-12 col-12">
+                        <div class="news-co-2-heading">
+                            in the news
+                        </div>
+                        <div class=" news-div news-div-1">
+                            <div class="news-content-1">
+                                    <span class="news-1-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                    <br>
+                                    <span class="news-1-time">July 1,2011</span>
+                            </div>
+                            <div class="news-content-2">
+                                    Curabitur porttitor sem in quam ullamcorper, id viverra lorem eleifend.Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. 
+                            </div>
+                        </div>
+                        <div class="news-div news-div-2">
+                                <div class="news-content-1">
+                                        <span class="news-1-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                                        <br>
+                                        <span class="news-1-time">July 1,2011</span>
+                                </div>
+                                <div class="news-content-2">
+                                        Curabitur porttitor sem in quam ullamcorper, id viverra lorem eleifend.Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. 
+                                </div>
+                        </div>
+                    </div><!-- end of cust-col-2 -->
                 </div><!-- end of sr-3 -->
+
+                <!-- start of sr-4 -->
                 <div class="row sub-row sr-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque. Ut rhoncus placerat cursus. Integer sodales, ante quis venenatis iaculis, erat dolor tincidunt turpis, et accumsan tortor massa non libero. Nulla ornare eleifend venenatis. Sed ut faucibus mi. Nunc tincidunt diam mi. Etiam quis enim consectetur, feugiat turpis eu, suscipit tortor. Mauris blandit sagittis ex, vitae sollicitudin justo tempor id. Aenean id ligula aliquam, vehicula elit eget, eleifend sem. Donec in arcu sed lacus scelerisque semper ut sed nulla. Praesent volutpat pretium enim. Proin finibus, sapien vitae pretium lacinia, nisi ante tincidunt odio, ac congue odio ex vitae quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam convallis arcu elementum tincidunt ultrices. Vestibulum fringilla ligula sed congue facilisis.
-
-Donec nulla lacus, molestie sed sapien eget, facilisis venenatis est. Vestibulum interdum elementum eros nec rutrum. Donec fringilla faucibus neque ut porttitor. Nam ac ante nec justo consequat sodales. Sed in porttitor justo. Nunc imperdiet mollis efficitur. Mauris elementum mi ut purus consequat tincidunt.
-
-Quisque volutpat nunc sed odio fermentum porttitor. Fusce leo ex, volutpat eu efficitur at, elementum a elit. Mauris velit ligula, malesuada id justo ut, vestibulum tempus mi. Sed eget semper tellus. Donec et congue purus. Vivamus facilisis tellus erat, in placerat quam gravida eu. Proin vestibulum orci a ante pellentesque porttitor. Aenean at quam pellentesque velit dapibus varius quis eu diam. Pellentesque ullamcorper lacus nisi, id molestie orci consequat a. Integer pellentesque dapibus nunc sit amet blandit. Fusce vel semper magna. Nam quis ante at felis efficitur imperdiet eget ac dolor.
+                    <div class="col sr-4-col-1 col-md-6 col-lg-6 col-sm-12 col-12">
+                        <div class="sr4col1-heading">
+                            <span class="media-title">media resources - photos</span>
+                        </div>
+                        <div class="row sr4col1-media">
+                            <div class="media-item-1"></div>
+                            <div class="media-item-1"></div>
+                            <div class="media-item-1"></div>
+                            <div class="media-item-1"></div>
+                        </div>
+                        <div class="row sr4col1-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque.
+                        </div>
+                    </div><!-- end of sr-4-col-1 -->
+                    <div class="col sr-4-col-2 col-md-6 col-lg-6 col-sm-12 col-12">
+                                <div class="sr4col1-heading">
+                                    <span class="media-title">media resources - videos</span>
+                                </div>
+                                <div class="row sr4col1-media">
+                                    <a href="javascript:void(0)" class="media-item-2 video-trigger"></a>
+                                    <a href="javascript:void(0)" class="media-item-2 video-trigger"></a>
+                                    <a href="javascript:void(0)" class="media-item-2 video-trigger"></a>
+                                    <a href="javascript:void(0)" class="media-item-2 video-trigger"></a>
+                                </div>
+                                <div id="vidBox">
+                                        <div id="videCont">
+                                          <video id="demo" loop controls>
+                                            <source src="assets/video/dummy-video.mp4" type="video/mp4">
+                                          </video>
+                                         </div>
+                                </div>
+                                <div class="row sr4col1-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque.
+                                </div>
+                    </div><!-- end of sr-4-col-2 -->
                 </div><!-- end of sr-4 -->
+
+
             </div><!-- end of main column -->
         </div><!-- end of row div -->
         <div class="row footer-row align-items-end">
-                , molestie sed sapien eget, facilisis venena
+                <div class="col footer-col-1 col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-sm-12 col-12">
+                    <span>home</span>
+                    <span>products</span>
+                    <span>customers</span>
+                    <span>news + events</span>
+                    <span>about us</span>
+                </div>
+                <div class="col footer-col-2 col-lg-4  col-md-6  col-sm-12 col-12">
+                    <span>&copy;2011 Company Name. All rights reserved.</span>
+                </div>
         </div><!-- end of footer-row -->
     </div><!-- main container ends -->
     
     <!-- scripts start -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/toggle-nav.js"></script>
+    <script type="text/javascript" src="assets/lib/cycle2/cycle2.jquery.min.js"></script>
+    <script type="text/javascript" src="assets/lib/video-player/js/videopopup.js"></script>
     <!-- end of scripts -->
 
+    <!-- script fpr video start -->
+    <script>
+        $(function () {
+            $('#vidBox').VideoPopUp({
+            opener: "video-trigger",
+            idvideo: "demo"
+            });
+        });
+
+        $('#vidBox').VideoPopUp({
+            backgroundColor: "#000000",
+            pausevideo: true,
+            maxweight: "640"
+        });
+    </script>
+    <!-- end of script for video -->
 </body>
 </html>

@@ -1,0 +1,38 @@
+/* footer css start */
+.footer-row{
+    margin:0px !important;
+    width:100%;
+    background-image: url('../images/footer_bg.jpg');
+    background-size: cover;
+}
+.footer-col-1{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px !important;
+    margin-bottom:60px !important;
+    text-transform: uppercase;
+    color:white;
+    font-size:1rem;
+}
+
+.footer-col-2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:20px !important;
+    margin-bottom:60px !important;
+    color:white;
+    font-size:12px;
+}
+
+@media screen and (max-width:768px){
+    .footer-col-1{
+        flex-direction: column;
+        margin-bottom: 0px !important;
+    }
+    .footer-col-2{
+        margin-bottom: 20px !important;
+    }
+}
+/* end of footer css */
