@@ -33,6 +33,14 @@
 .sr-1{
     margin-top:0px !important;
 }
+.utility-text-cr{
+    color: darkgreen;
+    font-weight:430;
+}
+.utility-text-lr{
+    color: darkgreen;
+    font-weight:430;
+}
 /* end of main part css */
 
 body::-webkit-scrollbar {
