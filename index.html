@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/slider.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/image-gallery.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/cycle2/cycle2.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/video-player/css/videopopup.css"/>
         <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap-4.0.0/dist/css/bootstrap.min.css">
@@ -188,11 +189,31 @@
                             <span class="media-title">media resources - photos</span>
                         </div>
                         <div class="row sr4col1-media">
-                            <div class="media-item-1"></div>
-                            <div class="media-item-1"></div>
-                            <div class="media-item-1"></div>
-                            <div class="media-item-1"></div>
+                            <img src="assets/images/slider-images/image-1.jpg" class="media-item-1" onclick="currentSlide(1)"/>
+                            <img src="assets/images/slider-images/image-2.jpg" class="media-item-1" onclick="currentSlide(2)"/>
+                            <img src="assets/images/slider-images/image-3.jpg" class="media-item-1" onclick="currentSlide(3)"/>
+                            <img src="assets/images/slider-images/image-4.jpg" class="media-item-1" onclick="currentSlide(4)"/>
+
+                            <!-- gallery code start  -->
+                            <div class="to_light" style="display:none">
+                                <img src="assets/images/prev.png" class="prev" onclick="plusSlides(-1)"/>
+                                <div class="mySlides">                                                                          
+                                    <img class="mySlides-images" src="assets/images/slider-images/image-1.jpg"/>
+                                </div>
+                                <div class="mySlides">
+                                    <img class="mySlides-images" src="assets/images/slider-images/image-2.jpg"/>
+                                </div>
+                                <div class="mySlides">
+                                    <img class="mySlides-images" src="assets/images/slider-images/image-3.jpg"/>
+                                </div>
+                                <div class="mySlides">
+                                    <img class="mySlides-images" src="assets/images/slider-images/image-4.jpg"/>
+                                </div>
+                                <img src="assets/images/next.png" class="next" onclick="plusSlides(1)"/>
+                            </div>
+                            <!-- gallery code end -->
                         </div>
+                        
                         <div class="row sr4col1-content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dolor sed felis congue pellentesque.
                             &nbsp;<span class="utility-text-cr">continue reading</span>
@@ -244,6 +265,8 @@
     <script type="text/javascript" src="assets/js/toggle-nav.js"></script>
     <script type="text/javascript" src="assets/lib/cycle2/cycle2.jquery.min.js"></script>
     <script type="text/javascript" src="assets/lib/video-player/js/videopopup.js"></script>
+    <script type="text/javascript" src="assets/lib/css-galery/css-galery.js"></script>
+    <script type="text/javascript" src="assets/lib/lightbox/jquery.lightbox_me.js"></script>
     <!-- end of scripts -->
 
     <!-- script fpr video start -->
@@ -259,6 +282,11 @@
             backgroundColor: "#000000",
             pausevideo: true,
             maxweight: "640"
+        });
+
+        $(".media-item-1").click(function(e){
+            $(".to_light").lightbox_me();
+            e.preventDefault();
         });
     </script>
     <!-- end of script for video -->

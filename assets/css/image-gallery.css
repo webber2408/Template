@@ -1,0 +1,31 @@
+/* image-gallery css start */
+.to_light{
+    position:relative;
+}
+.mySlides-images{
+    /* display:none; */
+    height: 46vh !important;
+    width: 77%;
+}
+.mySlides{
+    display:none;
+    justify-content: space-around;
+    align-items:center; 
+}
+.prev{
+    position: absolute;
+    top: 22vh;
+    width:25px;
+    color: white !important;
+    left: 11px;
+    cursor: pointer;
+}
+.next{
+    position: absolute;
+    top: 22vh;
+    color: white !important;
+    right: 11px;
+    width:25px;
+    cursor: pointer;
+}
+/* image-gallery css end */

@@ -228,7 +228,7 @@
         classPrefix: 'lb',
         zIndex: 999,
         centered: false,
-        modalCSS: {top: '40px'},
-        overlayCSS: {background: 'black', opacity: .3}
+        modalCSS: {top: '25%'},
+        overlayCSS: {background: 'black', opacity: .8}
     }
 })(jQuery);

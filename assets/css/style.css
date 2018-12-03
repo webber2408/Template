@@ -277,8 +277,13 @@ body::-webkit-scrollbar-thumb {
     font-weight: 600;
 }
 .media-item-1{
-    background-image: url('../images/photo-thumbnail.png');
-    background-size:cover;
+    /* background-image: url('../images/photo-thumbnail.png');
+    background-size:cover; */
+    height:120px;
+    width:48% !important;
+    margin:1% !important;
+}
+.media-item-1-video{
     height:120px;
     width:50% !important;
 }
@@ -295,3 +300,6 @@ body::-webkit-scrollbar-thumb {
     
 }
 /* sr-4 css end */
+
+
+
